@@ -61,7 +61,7 @@ header.site-header{
   border-bottom:1px solid var(--line);
 }
 .brand{display:flex; align-items:center; gap:12px;}
-.brand-logo{height:80px; width:auto; object-fit:contain;}
+.brand-logo{height: 140px;px; width:auto; object-fit:contain;}
 nav.main-nav{display:flex; align-items:center; gap:clamp(18px,2.6vw,40px);}
 nav.main-nav .nav-link{
   font-family:'Space Grotesk',sans-serif; font-size:13.5px; font-weight:500;
