@@ -61,24 +61,7 @@ header.site-header{
   border-bottom:1px solid var(--line);
 }
 .brand{display:flex; align-items:center; gap:12px;}
-.brand-mark{width:38px; height:38px;}
-.logo-placeholder{
-  position:relative; display:flex; align-items:center; justify-content:center;
-  background:var(--grey-blob); border:1.5px dashed rgba(20,26,43,.35); border-radius:8px;
-  cursor:pointer; overflow:hidden; transition:background .2s var(--ease);
-}
-.logo-placeholder:hover{background:var(--grey-blob2);}
-.logo-placeholder img{width:100%; height:100%; object-fit:cover;}
-.logo-placeholder .logo-plus{width:16px; height:16px; color:var(--ink-soft);}
-.brand-text{line-height:1.1;}
-.brand-text .name{
-  font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:15px;
-  letter-spacing:.04em; color:var(--navy2);
-}
-.brand-text .role{
-  font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.16em;
-  color:var(--ink-faint); text-transform:uppercase;
-}
+.brand-logo{height:56px; width:auto; object-fit:contain;}
 nav.main-nav{display:flex; align-items:center; gap:clamp(18px,2.6vw,40px);}
 nav.main-nav .nav-link{
   font-family:'Space Grotesk',sans-serif; font-size:13.5px; font-weight:500;

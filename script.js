@@ -1,30 +1,3 @@
-/* ---------- logo upload placeholder ---------- */
-const logoFrame = document.getElementById('logoFrame');
-const logoInput = document.getElementById('logoInput');
-const logoPreview = document.getElementById('logoPreviewImg');
-const logoPlus = document.getElementById('logoPlusIcon');
-if(logoFrame && logoInput){
-  logoFrame.addEventListener('click', (e)=>{
-    e.preventDefault();
-    e.stopPropagation();
-    logoInput.click();
-  });
-  logoInput.addEventListener('click', (e)=> e.stopPropagation());
-  logoInput.addEventListener('change', (e)=>{
-    const file=e.target.files[0];
-    if(!file) return;
-    const reader=new FileReader();
-    reader.onload=(ev)=>{
-      logoPreview.src=ev.target.result;
-      logoPreview.style.display='block';
-      logoPlus.style.display='none';
-      logoFrame.style.background='transparent';
-      logoFrame.style.border='none';
-    };
-    reader.readAsDataURL(file);
-  });
-}
-
 /* ---------- hero photo upload placeholder ---------- */
 const heroFrame = document.getElementById('heroFrame');
 const heroInput = document.getElementById('heroPhotoInput');
