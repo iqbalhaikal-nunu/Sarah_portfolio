@@ -1,22 +1,3 @@
-/* ---------- hero photo upload placeholder ---------- */
-const heroFrame = document.getElementById('heroFrame');
-const heroInput = document.getElementById('heroPhotoInput');
-const heroPreview = document.getElementById('heroPreviewImg');
-const heroPlaceholder = document.getElementById('heroPlaceholder');
-if(heroFrame && heroInput){
-  heroFrame.addEventListener('click', ()=> heroInput.click());
-  heroInput.addEventListener('change', (e)=>{
-    const file=e.target.files[0];
-    if(!file) return;
-    const reader=new FileReader();
-    reader.onload=(ev)=>{
-      heroPreview.src=ev.target.result;
-      heroPreview.style.display='block';
-      heroPlaceholder.style.display='none';
-    };
-    reader.readAsDataURL(file);
-  });
-}
 
 /* dot grid generators */
 function makeDots(id,count){
