@@ -241,6 +241,11 @@ nav.main-nav .nav-link.active::after{width:100%;}
 }
 .work-card .cap b{font-family:'Space Grotesk',sans-serif; font-size:14px; color:var(--navy2); font-weight:600;}
 .work-card .cap span{font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--ink-faint); text-transform:uppercase; letter-spacing:.08em;}
+.video-portfolio{max-width:1120px; margin:30px auto 0; display:grid; gap:22px; text-align:left;}
+.video-portfolio-copy{display:grid; gap:14px;}
+.video-portfolio-copy h3{font-family:'Space Grotesk',sans-serif; font-size:clamp(22px,2.4vw,28px); color:var(--navy2); margin:0;}
+.video-portfolio-copy p{color:var(--ink-soft); font-size:14px; line-height:1.7; max-width:62ch; margin:0;}
+.video-portfolio video{width:100%; border-radius:18px; max-height:620px; box-shadow:0 26px 60px -30px rgba(20,26,43,.4);}
 
 /* bottom navy wave footer band for the home page, echoing wireframe */
 .home-foot-wave{position:relative; width:100%; height:120px; margin-top:10px;}
